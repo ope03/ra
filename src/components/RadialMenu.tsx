@@ -9,10 +9,10 @@ export default function RadialMenu({ button }: RadialMenuProps) {
     const [open, setOpen] = useState(false);
 
     const menuItems = [
-        { label: 'Photo', angle: 0 },
+        { label: 'Catalogue', angle: 0 },
         { label: 'Art', angle: 90 },
-        { label: 'About', angle: 180 },
-        { label: 'Contact', angle: 270 },
+        { label: 'Photography', angle: 180 },
+        { label: 'Filler', angle: 270 },
     ];
 
     return (
