@@ -124,25 +124,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="scroll-down"></div>
-      <div className="scroll-down-icon">
-        <img src="/images/arrow.png" alt="" />
-      </div>
       <br></br>
       <section className="flex items-center justify-center p-6 rounded-lg">
-        <RadialMenu
-          button={
-            <button className="hover:scale-115">
-              <Image
-                aria-hidden
-                src="/purple-cam-1.png"
-                alt="Explore"
-                width={64}
-                height={64}
-              />
-            </button>
-          }
-        />
+        
         {/* Contact Avatar and reveal*/}
         <ContactAvatarReveal
           button={
@@ -152,37 +136,6 @@ export default function Home() {
           }
         />
       </section>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.instagram.com/rae.lyn_a/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/instagram.png"
-            alt="Instagram icon"
-            width={16}
-            height={16}
-          />
-          Instagram
-        </a>
-        <button
-          onClick={() => setShowComboBox(!showComboBox)}
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        >
-          <Image
-            aria-hidden
-            src="/tiktok.png"
-            alt="TikTok icon"
-            width={16}
-            height={16}
-          />
-          TikTok
-        </button>
-        {showComboBox && <DropdownMenu />}
-      </footer>
     </div>
   );
 }
